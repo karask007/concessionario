@@ -23,5 +23,6 @@ public class UtenteController {
 	@ResponseBody
 	public HTTPResponse register(@RequestBody Utente utente, HTTPResponse response, HttpSession session) {
 	utenteCrud.insert(utente);
+	
 	}
 }
