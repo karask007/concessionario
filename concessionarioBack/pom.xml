@@ -302,7 +302,7 @@
       <resource>
         <directory>resources</directory>
         <excludes>
-          <exclude>**/*.java</exclude>
+          <exclude>**/*.java </exclude>
         </excludes>
       </resource>
     </resources>
