@@ -1,4 +1,4 @@
-package concessionarioBack.controllerJsf;
+package concessionarioBack.controller.service;
 
 import concessionarioBack.model.Utente;
 
