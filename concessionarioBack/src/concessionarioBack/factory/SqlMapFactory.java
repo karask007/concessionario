@@ -55,6 +55,8 @@ public class SqlMapFactory {
 		}
 	}
 	
+	
+	
 	public  void closeSession(){
 		if (THREAD_LOCAL.get().sqlSession!=null){		
 			THREAD_LOCAL.get().sqlSession.close();
