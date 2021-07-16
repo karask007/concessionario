@@ -24,11 +24,10 @@ public class UtenteController {
 	UtenteCrud utenteCrud = new UtenteCrud();
 	@RequestMapping(value = "registrazione", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody
-	
-	
-	public HTTPResponse register(@RequestBody Utente utente, HTTPResponse response, HttpSession session) {
+	public HTTPResponse registerAdmin(@RequestBody Utente utente, HTTPResponse response, HttpSession session) {
 	if(utente==null) {
 	utenteCrud.insert(utente);
+	utente.setRuolo(1);
 	return new HTTPResponse(utente);
 	}else {
 		response.setSuccess(false);
