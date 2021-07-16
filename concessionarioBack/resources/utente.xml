@@ -2,4 +2,18 @@
 <!DOCTYPE mapper
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-
+<mapper namespace="concessionarioBack.mapper.UtenteMapper">
+<insert id = "insert"
+parameterType="concessionarioBack.model.Utente" 
+useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+	   insert into utente(nome,cognome,email,password,documento,ruolo) values (
+	  
+	     #{nome}
+	   , #{cognome}
+	   , #{email}
+	   , #{password}
+	   , #{documento}
+	   , #{ruolo}
+	     )
+	  </insert>
+</mapper> 

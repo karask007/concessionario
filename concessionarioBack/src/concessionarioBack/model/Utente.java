@@ -63,6 +63,17 @@ public class Utente {
 	public Utente() {
 		super();
 	}
+	
+	public Utente( String nome, String cognome, String email, String password, String documento, int ruolo) {
+		super();
+		
+		this.nome = nome;
+		this.cognome = cognome;
+		this.email = email;
+		this.password = password;
+		this.documento = documento;
+		this.ruolo = ruolo;
+	}
 	@Override
 	public String toString() {
 		return "Utente [id=" + id + ", nome=" + nome + ", cognome=" + cognome + ", email=" + email + ", password="
