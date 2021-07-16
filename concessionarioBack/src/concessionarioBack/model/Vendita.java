@@ -55,7 +55,7 @@ public class Vendita {
 	public Vendita(int id, Timestamp data, double prezzo, int id_auto, Automobile automobile, int id_utente, Utente utente) {
 		super();
 		this.id = id;
-		this.data = data;
+		this.data = data ;
 		this.prezzo = prezzo;
 		this.id_auto = id_auto;
 		this.automobile = automobile;
