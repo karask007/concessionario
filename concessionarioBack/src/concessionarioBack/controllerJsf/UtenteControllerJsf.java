@@ -1,5 +1,7 @@
 package concessionarioBack.controllerJsf;
 
-public class UtenteControllerJsf {
+import concessionarioBack.model.Utente;
 
+public class UtenteControllerJsf {
+    private Utente utente;
 }
